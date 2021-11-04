@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="mps001">01dp</dimen>
+    <dimen name="mps006">06dp</dimen>
+    <dimen name="mps010">010dp</dimen>
+    <dimen name="mps015">015dp</dimen>
+    <dimen name="mps016">016dp</dimen>
+    <dimen name="mps025">25dp</dimen>
+    <dimen name="mps035">35dp</dimen>
+    <dimen name="mps050">50dp</dimen>
+    <dimen name="mps150">150dp</dimen>
+    <dimen name="mps200">200dp</dimen>
+    <dimen name="mps220">220dp</dimen>
+    <dimen name="mps250">250dp</dimen>
+
+    <dimen name="ts12">12sp</dimen>
+    <dimen name="ts14">14sp</dimen>
+    <dimen name="ts16">16sp</dimen>
+
+</resources>

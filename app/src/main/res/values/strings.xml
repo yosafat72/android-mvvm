@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">MovieDB</string>
+
+    <string name="hello">Hello</string>
+    <string name="anonymous">Anonymous</string>
+    <string name="home">Dashboard</string>
+    <string name="category">Kategori</string>
+    <string name="film_populer">Film Populer</string>
+    <string name="action">Aksi</string>
+    <string name="drama">Drama</string>
+    <string name="cartoon">Kartun</string>
+    <string name="sport">Olah Raga</string>
+    <string name="news">Berita</string>
+    <string name="ranting_tertinggi">Ranting Tertinggi</string>
+    <string name="title">Title</string>
+    <string name="film_yang_akan_datang">Film Yang Akan Datang</string>
+</resources>
