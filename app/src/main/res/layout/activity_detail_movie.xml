@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.DetailMovieActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:id="@+id/toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/light_blue">
+
+            <ImageView
+                android:id="@+id/icon_toolbar"
+                android:layout_width="@dimen/mps035"
+                android:layout_height="@dimen/mps035"
+                android:src="@drawable/ic_movie"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/mps025"/>
+
+            <TextView
+                android:id="@+id/txtHello"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hello"
+                android:layout_toRightOf="@+id/icon_toolbar"
+                android:layout_alignTop="@+id/icon_toolbar"
+                android:layout_marginLeft="@dimen/mps015"
+                android:fontFamily="@font/rubik_medium"
+                android:textColor="@color/white"
+                android:textSize="@dimen/ts14"/>
+
+            <TextView
+                android:id="@+id/txtClient"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/anonymous"
+                android:layout_toRightOf="@+id/icon_toolbar"
+                android:layout_below="@+id/txtHello"
+                android:layout_marginLeft="@dimen/mps015"
+                android:fontFamily="@font/rubik_bold"
+                android:textColor="@color/white"
+                android:textSize="@dimen/ts16"/>
+
+        </RelativeLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+</RelativeLayout>

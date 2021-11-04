@@ -12,7 +12,8 @@
         android:orientation="vertical"
         app:cardUseCompatPadding="true"
         app:cardCornerRadius="@dimen/mps010"
-        app:cardElevation="@dimen/mps010">
+        app:cardElevation="@dimen/mps010"
+        android:id="@+id/cardMovie">
 
         <LinearLayout
             android:layout_width="match_parent"

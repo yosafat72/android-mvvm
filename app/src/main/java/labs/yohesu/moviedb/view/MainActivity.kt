@@ -7,11 +7,14 @@ import android.os.Handler
 import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
+import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentTransaction
 import dagger.hilt.android.AndroidEntryPoint
 import labs.yohesu.moviedb.R
 import labs.yohesu.moviedb.databinding.ActivityMainBinding
+import labs.yohesu.moviedb.helper.ItemClickListener
+import labs.yohesu.moviedb.model.ResultsItem
 import labs.yohesu.moviedb.view.fragment.CategoryFragment
 import labs.yohesu.moviedb.view.fragment.HomeFragment
 

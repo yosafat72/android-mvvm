@@ -1,6 +1,7 @@
 package labs.yohesu.moviedb.view.fragment
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -17,12 +18,14 @@ import labs.yohesu.moviedb.adapter.MovieTopRateAdapter
 import labs.yohesu.moviedb.adapter.MovieUpcommingAdapter
 import labs.yohesu.moviedb.databinding.FragmentHomeBinding
 import labs.yohesu.moviedb.helper.Constanta
+import labs.yohesu.moviedb.helper.ItemClickListener
 import labs.yohesu.moviedb.model.ResultsItem
+import labs.yohesu.moviedb.view.DetailMovieActivity
 import labs.yohesu.moviedb.viewmodel.MovieViewModel
 import labs.yohesu.mvvm2.networks.ResponseHelper
 
 @AndroidEntryPoint
-class HomeFragment : Fragment() {
+class HomeFragment : Fragment(), ItemClickListener {
 
     private lateinit var binding: FragmentHomeBinding
     private lateinit var viewModel: MovieViewModel
@@ -49,6 +52,7 @@ class HomeFragment : Fragment() {
 
     private fun setupRV(){
         topRateAdapter = MovieTopRateAdapter()
+        topRateAdapter.setListener(this)
         binding.rvTopRate.layoutManager = LinearLayoutManager(activity, LinearLayoutManager.HORIZONTAL, false)
         binding.rvTopRate.adapter = topRateAdapter
 
@@ -130,6 +134,13 @@ class HomeFragment : Fragment() {
                 }
             }
         })
+    }
+
+    override fun onMovieClick(view: View?, model: ResultsItem) {
+        activity?.let{
+            val intent = Intent (it, DetailMovieActivity::class.java)
+            it.startActivity(intent)
+        }
     }
 
 }
